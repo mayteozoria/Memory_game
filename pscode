@@ -1,0 +1,17 @@
+//Pseudocode txt
+
+matches =[]
+mateched = []
+picks =[]
+Defne an array of flash Cards  
+
+Define a varibale to keep track of the current flash 
+Display the current card on the page
+Define a function to check the answer and show the next flash card
+Move on to the next card
+Initialize the flash card
+Check if the user's card is the same/corrent
+If no, match, player two goes next. 
+Display message indicating a matches
+Add Event listners for the buttons to 'click' on the Cards
+
