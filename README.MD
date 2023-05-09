@@ -5,7 +5,7 @@
 
 ### Date: 5/4/2023
 ### By: Mayte Ozoria
-#### [Website]|[Github]|[LinkedIn]
+
 ---
 #### **_Technologies Used_**
 
@@ -21,17 +21,18 @@
 
 ---
 ### **_Description_**
-##### Step 1. All cards are mixed up and laid in columns and rows, face down.
-##### Step2. Start game  and turns over two cards, one at a time.
-##### Step3. If the cards do not match, it is not a pair, so they are turn back over.
-##### Step4. Player 2's turn to turn over two cards
-##### Step5. If the cards do not match, it is not a pair so they are turned back over. 
-##### Step6. Player 1's turn again and the goal is to try to turn over identical cards from memory. 
-##### Step 7. If the cards match, it is a pair and they can play again!
-##### Step 8. Player 1 turns over two other cards. 
-##### Step 9. If they match again, they go again. If not, player 2's turn. 
----
-#### Getting Started
+##### Memory card is a timed game where the player has to remember shapes, pictures, or objects on the back side of the card and select the pair.
+##### The game board consist of rows and colums of cards. All the moves are counted. The game ends once the player matches the entire gameboard or the timer runs out. 
+
+
+<br>
+
+
+# Getting Started
+- Select game level 
+- Proceed to matching cards before the timer finishes
+
+</br>
 
 #### **_Screenshots_**
 ![Play](https://allma.si/blog/wp-content/uploads/2022/02/flipping-cards-in-memory-game.gif)

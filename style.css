@@ -1,4 +1,48 @@
-html, body {
-  height: 100%;
+body {
+  background: linear-gradient(90deg, hsla(172, 85%, 74%, 1) 0%, hsla(319, 74%, 64%, 1) 100%);
+
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+h2{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+  font-size: 50px;
+}
+.start {
+  text-align: center;
+
+}
+.card{
   width: 100%;
 }
+
+.cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  justify-items: center;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+

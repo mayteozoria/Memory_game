@@ -1,17 +1,15 @@
 //Pseudocode txt
 
-matches =[]
-mateched = []
-picks =[]
-Defne an array of flash Cards  
+1. Define required constants:
+2. Define required variables used to track the state of the board. 
+3. Store elements on the page that will represent the different elements such as 12,20,30
+4. Define a varibale to keep track of the current flash 
+5. Display the current card on the page
+6. Define a function to check the answer and show the next flash card
+7. Move on to the next card
+8. Initialize the flash card
+9. Check if the user's card is the same/corrent
+10. Display message indicating a matches
+12. Add Event listners for the buttons to 'click' on the level of the game
 
-Define a varibale to keep track of the current flash 
-Display the current card on the page
-Define a function to check the answer and show the next flash card
-Move on to the next card
-Initialize the flash card
-Check if the user's card is the same/corrent
-If no, match, player two goes next. 
-Display message indicating a matches
-Add Event listners for the buttons to 'click' on the Cards
 
