@@ -33,9 +33,10 @@ let finishedCards = 0 // if the all the cards have been matched
 /*------ cached elements ----*/
 const messageEl = document.querySelector('h2')
 const cardEls = document.querySelectorAll('.card') //select all the cards
+resetBtn = document.querySelector('button')
 
 /*----- event listeners -----*/
-document.querySelector('.button').addEventListener('click', function () {
+resetBtn.addEventListener('click', function () {
   resetGame()
 })
 
@@ -68,7 +69,7 @@ cardEls.forEach((element, index) => {
       //store the first try
       firstTry = index
     } else {
-      //check to see if the current cards are equal, its a match
+      //check to see if the current cards are equal, its a matchs
       if (cards[firstTry].value === cards[index].value) {
         cards[firstTry].matched = true
         cards[index].matched = true
@@ -83,8 +84,7 @@ cardEls.forEach((element, index) => {
       } else {
         //no match
         nextTurn = false
-
-        setTimeout(function () {
+        setTimeout(() => {
           //set timer to have a delay so cards flip back after 1 second if there is no match
           cardEls[firstTry].setAttribute('src', './images/bluefront.png') //flip the cards over if there is no match
           cardEls[index].setAttribute('src', './images/bluefront.png')
@@ -100,23 +100,28 @@ cardEls.forEach((element, index) => {
 function resetGame() {
   nextTurn = false
 
-  setTimeout(function () {
+  setTimeout(() => {
     firstTry = null
     nextTurn = true
     finishedCards = 0
 
-    cardEls.forEach(function (element, index) {
+    cardEls.forEach((element, index) => {
       //flip the cards face down once the games has reset
       element.setAttribute('src', './images/bluefront.png')
     })
 
-    cards.forEach(function (card, index) {
+    cards.forEach((card, index) => {
       //reset the card and its index position to  false
       card.matched = false
     })
     shuffleCards(cards)
     //shuffle cards and start again
   }, 500)
+}
+
+function render() {
+  shuffleCards()
+  renderMessage()
 }
 
 function renderMessage() {

@@ -30,13 +30,15 @@ let finishedCards = 0 // if the all the cards have been matched
 /*------ cached elements ----*/
 const messageEl = document.querySelector('h2')
 const cardEls = document.querySelectorAll('.card') //select all the cards
+resetBtn = document.querySelector('button')
 
 /*----- event listeners -----*/
-document.querySelector('.button').addEventListener('click', function () {
+resetBtn('.button').addEventListener('click', function () {
   resetGame()
 })
 
 /*----- functions -----*/
+
 function init() {
   // to visualize the game and initalize the game
   let firstTry = null //1st try index of the card selected.
@@ -49,7 +51,7 @@ const shuffleCards = (arr) => {
   //a simple sort will shuffle the elements/cards randomly in any order
   arr.sort(() => Math.random() - 0.5)
 }
-//start the game
+
 cardEls.forEach((element, index) => {
   //calls a function for each element in the array by using the selector .cards
   element.addEventListener('click', function () {
@@ -97,26 +99,28 @@ cardEls.forEach((element, index) => {
 
 function resetGame() {
   nextTurn = false
-
-  setTimeout(function () {
+  setTimeout(() => {
     firstTry = null
     nextTurn = true
     finishedCards = 0
 
-    cardEls.forEach(function (element, index) {
+    cardEls.forEach((element, index) => {
       //flip the cards face down once the games has reset
       element.setAttribute('src', './images/bluefront.png')
     })
 
-    cards.forEach(function (card, index) {
+    cards.forEach((card, index) => {
       //reset the card and its index position to  false
       card.matched = false
     })
     shuffleCards(cards)
     //shuffle cards and start again
-  }, 1000)
+  }, 500)
 }
-
+function render() {
+  shuffleCards()
+  renderMessage()
+}
 function renderMessage() {
   if (finishedCards === cards.length) {
     messageEl.innerText = 'YOU WIN!'

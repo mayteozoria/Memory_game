@@ -25,9 +25,10 @@ let finishedCards = 0 // if the all the cards have been matched
 /*------ cached elements ----*/
 const messageEl = document.querySelector('h2')
 const cardEls = document.querySelectorAll('.card') //select all the cards
+resetBtn = document.querySelector('button')
 
 /*----- event listeners -----*/
-document.querySelector('.button').addEventListener('click', function () {
+resetBtn.addEventListener('click', function () {
   resetGame()
 })
 
@@ -44,9 +45,9 @@ const shuffleCards = (arr) => {
   //a simple sort will shuffle the elements/cards randomly in any order
   arr.sort(() => Math.random() - 0.5)
 }
-//start the game
+
+//calls a function for each element in the array by using the selector .cards
 cardEls.forEach((element, index) => {
-  //calls a function for each element in the array by using the selector .cards
   element.addEventListener('click', function () {
     //listen for click event when a card is clicked on
     if (index === firstTry || cards[index].matched || !nextTurn) {
@@ -76,7 +77,7 @@ cardEls.forEach((element, index) => {
         //no match
         nextTurn = false
 
-        setTimeout(function () {
+        setTimeout(() => {
           //set timer to have a delay so cards flip back after 1 second if there is no match
           cardEls[firstTry].setAttribute('src', './images/bluefront.png') //flip the cards over if there is no match
           cardEls[index].setAttribute('src', './images/bluefront.png')
@@ -90,25 +91,30 @@ cardEls.forEach((element, index) => {
 })
 
 function resetGame() {
+  //reset the cards when two non matching cards are selected
   nextTurn = false
-
-  setTimeout(function () {
+  setTimeout(() => {
     firstTry = null
     nextTurn = true
     finishedCards = 0
 
-    cardEls.forEach(function (element, index) {
+    cardEls.forEach((element, index) => {
       //flip the cards face down once the games has reset
       element.setAttribute('src', './images/bluefront.png')
     })
 
-    cards.forEach(function (card, index) {
+    cards.forEach((card, index) => {
       //reset the card and its index position to  false
       card.matched = false
     })
     shuffleCards(cards)
     //shuffle cards and start again
   }, 500)
+}
+
+function render() {
+  shuffleCards()
+  renderMessage()
 }
 
 function renderMessage() {
