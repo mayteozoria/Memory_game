@@ -8,7 +8,7 @@ let cards = [
   { value: '5', image: './images/turtle.png', matched: 'false' },
   { value: '6', image: './images/eagle.png', matched: 'false' },
   { value: '7', image: './images/lion.png', matched: 'false' },
-  { value: '8', image: './images/turle.png', matched: 'false' },
+  { value: '8', image: './images/frog.png', matched: 'false' },
 
   { value: '1', image: './images/bird.png', matched: 'false' },
   { value: '2', image: './images/kitten.png', matched: 'false' },
@@ -17,7 +17,7 @@ let cards = [
   { value: '5', image: './images/turtle.png', matched: 'false' },
   { value: '6', image: './images/eagle.png', matched: 'false' },
   { value: '7', image: './images/lion.png', matched: 'false' },
-  { value: '8', image: './images/turle.png', matched: 'false' }
+  { value: '8', image: './images/frog.png', matched: 'false' }
 ]
 //influenced from the rock scissors paper
 

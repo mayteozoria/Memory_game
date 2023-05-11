@@ -1,7 +1,9 @@
 body {
   /* background: linear-gradient(90deg, hsla(172, 85%, 74%, 1) 0%, hsla(319, 74%, 64%, 1) 100%); */
 }
-
+.background1{
+  background-size: cover;
+}
 header {
   text-align: center;
   font-size: 28px;
