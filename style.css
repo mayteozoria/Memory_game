@@ -41,6 +41,15 @@ p{
   text-align: center;
 
 }
+
+img{
+  border-radius: 8px;
+  padding: 5px;
+  width: 80%;
+  height: 90%;
+  
+  width: 8px;
+}
 .card{
   width: 100%;
   border-radius: 10%;
