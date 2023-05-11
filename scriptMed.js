@@ -28,7 +28,7 @@ let nextTurn = true //the next try
 let finishedCards = 0 // if the all the cards have been matched
 
 /*------ cached elements ----*/
-
+const messageEl = document.querySelector('h2')
 const cardEls = document.querySelectorAll('.card') //select all the cards
 
 /*----- event listeners -----*/
@@ -74,7 +74,9 @@ cardEls.forEach((element, index) => {
         finishedCards += 2 //increment by 2
         //check for winner to see if all the cards are matched and flipped down then reset
         if (finishedCards === cards.length) {
-          resetGame() //check for a win or reset
+          //check for a win or reset
+          renderMessage()
+          resetGame()
         }
       } else {
         //no match
@@ -87,7 +89,7 @@ cardEls.forEach((element, index) => {
           firstTry = null //resset the game to flipping them back over to the bluefront
           nextTurn = true //continue playing
           // tries = true //to continue playing
-        }, 1000)
+        }, 500)
       }
     }
   })
@@ -112,5 +114,11 @@ function resetGame() {
     })
     shuffleCards(cards)
     //shuffle cards and start again
-  }, 500)
+  }, 1000)
+}
+
+function renderMessage() {
+  if (finishedCards === cards.length) {
+    messageEl.innerText = 'YOU WIN!'
+  }
 }
