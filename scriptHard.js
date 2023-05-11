@@ -77,7 +77,7 @@ cardEls.forEach((element, index) => {
         finishedCards += 2 //increment by 2
         //check for winner to see if all the cards are matched and flipped down then reset
         if (finishedCards === cards.length) {
-          messageEl()
+          renderMessage()
           resetGame() //check for a win or reset
         }
       } else {
