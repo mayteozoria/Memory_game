@@ -2,7 +2,7 @@
 
 1. Define required constants:
 2. Define required variables used to track the state of the board. 
-3. Store elements on the page that will represent the different elements such as 12,20,30
+3. Store elements on the page that will represent the different elements such as 12,16,20
 4. Define a varibale to keep track of the current flash 
 5. Display the current card on the page
 6. Define a function to check the answer and show the next flash card

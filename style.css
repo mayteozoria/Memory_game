@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(90deg, hsla(172, 85%, 74%, 1) 0%, hsla(319, 74%, 64%, 1) 100%);
+  /* background: linear-gradient(90deg, hsla(172, 85%, 74%, 1) 0%, hsla(319, 74%, 64%, 1) 100%); */
 }
 
 header {
@@ -9,9 +9,15 @@ header {
 }
 h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 120px;
+  color: white;
 }
-
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 h2{
   text-align: center;
 }
@@ -50,3 +56,27 @@ p{
 }
 
 
+.levels {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 40px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.levels:hover{
+  background-color: pink;
+}
+.levels:active{
+    background-color: lightpink;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  
+}

@@ -40,6 +40,7 @@
 
 ### **_Credits_**
 ##### Game Rules: (https://www.memozor.com/memory-games/memory-game-rules)
+##### https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
 
 ### **_Wireframe_**
 ![WIREFRAME]:(https://www.figma.com/file/waGUZxmjzyXiIPGbeaNvMJ/Untitled?node-id=0%3A1&t=FfZJWSrE51q3pSv9-1)
