@@ -4,12 +4,17 @@
 2. Define required variables used to track the state of the board. 
 3. Store elements on the page that will represent the different elements such as 12,16,20
 4. Define a varibale to keep track of the current flash 
-5. Display the current card on the page
-6. Define a function to check the answer and show the next flash card
-7. Move on to the next card
-8. Initialize the flash card
-9. Check if the user's card is the same/corrent
-10. Display message indicating a matches
-12. Add Event listners for the buttons to 'click' on the level of the game
+5. Display the current cards on the page
+6. Define the cards and their matches
+7. Initialize the flash card
+8. Handle the player clicking a square/add Event listners  level of the game
+  7.1 Obtain the index being clicked
+  7.2 Loop through all the elements  
+  7.3If the cards are not matched, flip back.
+  7.4 If the cards are a match, do not flip back/reset/
+  7.5 WInner is declared when all the cards are matched.
+9. Display message indicating a matches
+10. Add event listener to the reset button. At any time during the game, it can be reset.
+
 
 
