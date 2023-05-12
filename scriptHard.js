@@ -108,6 +108,7 @@ function resetGame() {
     cardEls.forEach((element, index) => {
       //flip the cards face down once the games has reset
       element.setAttribute('src', './images/bluefront.png')
+      messageEl.innerText = '' //remove the innter of YOU WIN
     })
 
     cards.forEach((card, index) => {
