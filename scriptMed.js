@@ -33,7 +33,7 @@ const cardEls = document.querySelectorAll('.card') //select all the cards
 resetBtn = document.querySelector('button')
 
 /*----- event listeners -----*/
-resetBtn('.button').addEventListener('click', function () {
+resetBtn.addEventListener('click', function () {
   resetGame()
 })
 

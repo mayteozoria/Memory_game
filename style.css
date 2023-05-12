@@ -10,7 +10,12 @@
 }
 a {
   color: white;
+  text-align: center;
 
+}
+img{
+  width: 60%;
+  height: auto;
 }
 header {
   text-align: center;
@@ -33,7 +38,7 @@ h2{
   text-align: center;
   color: red;
   font-size: 40px;
-  
+
 }
 
 p{
@@ -79,10 +84,10 @@ p{
 }
 
 .button:hover{
-  background-color: pink;
+  background-color: #2724EC;
 }
 .button:active{
-    background-color: lightpink;
+    background-color: #24C8EC;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   
@@ -97,7 +102,8 @@ p{
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: black;
+  background-color: #11DBF0
+  ;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
@@ -112,3 +118,24 @@ p{
     transform: translateY(4px);
   
 }
+
+footer{
+  position: fixed;
+   left: 0;
+   bottom: 30px;
+   width: 100%;
+    color: white;
+   text-align: center;
+}
+/* .link{
+  
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+} */

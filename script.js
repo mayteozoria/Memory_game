@@ -7,6 +7,7 @@ let cards = [
   { value: '4', image: './images/koyfish.png', matched: 'false' },
   { value: '5', image: './images/turtle.png', matched: 'false' },
   { value: '6', image: './images/eagle.png', matched: 'false' },
+
   { value: '1', image: './images/bird.png', matched: 'false' },
   { value: '2', image: './images/kitten.png', matched: 'false' },
   { value: '3', image: './images/bunny.png', matched: 'false' },
@@ -84,7 +85,7 @@ cardEls.forEach((element, index) => {
           firstTry = null //resset the game to flipping them back over to the bluefront
           nextTurn = true //continue playing
           // tries = true //to continue playing
-        }, 1000)
+        }, 500)
       }
     }
   })
