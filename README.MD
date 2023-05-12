@@ -29,8 +29,10 @@
 
 
 # Getting Started
-- Select game level 
-- Proceed to matching cards before the timer finishes
+- Select game level 1, level 2, level 3.
+- As the level increases, more cards are added.
+- Cards will flip to the image side when they are clicked. 
+- Match cards in pairs. 
 
 </br>
 
@@ -39,8 +41,9 @@
 
 
 ### **_Credits_**
-##### Game Rules: (https://www.memozor.com/memory-games/memory-game-rules)
+##### Game Rules: (https://raisingchildren.net.au/guides/activity-guides/thinking-and-brain-games/memory-game#:~:text=Memory%20games%20for%20kids%3A%20why%20they're%20good,-Memory%20games%20for&text=They%3A,things%20without%20fear%20of%20failure.)
 ##### https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+#### Building a browser game:(https://hub.generalassemb.ly/learn/course/front-end-fundamentals-us-online-ec-24-april-2023-19-july-2023/build-another-game-rock-paper-scissors/build-another-game-rock-paper-scissors?client=courses&page=1https://hub.generalassemb.ly/learn/course/front-end-fundamentals-us-online-ec-24-april-2023-19-july-2023/build-another-game-rock-paper-scissors/build-another-game-rock-paper-scissors?client=courses&page=1)
 
 ### **_Wireframe_**
 ![WIREFRAME]:(https://www.figma.com/file/waGUZxmjzyXiIPGbeaNvMJ/Untitled?node-id=0%3A1&t=FfZJWSrE51q3pSv9-1)
