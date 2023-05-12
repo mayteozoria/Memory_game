@@ -17,7 +17,7 @@ a {
 
 }
 img{
-  width: 50%;
+  width: 60%;
   height: auto;
 }
 header {
@@ -26,10 +26,10 @@ header {
   margin-bottom: 20px;
 }
 h1 {
-  margin: 3% auto;
+  margin: 9% auto;
   font-family: 'Alfa Slab One';
   text-align: center;
-  font-size: 120px;
+  font-size: 140px;
   
 }
 .center {
