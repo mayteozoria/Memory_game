@@ -75,7 +75,7 @@ cardEls.forEach((element, index) => {
         cards[index].matched = true
         //match
         firstTry = null //start the next turn
-        finishedCards += 2 //increment by 2
+        //finishedCards += 2 //increment by 2
         //check for winner to see if all the cards are matched and flipped down then reset
         if (finishedCards === cards.length) {
           renderMessage()
@@ -91,7 +91,7 @@ cardEls.forEach((element, index) => {
           firstTry = null //resset the game to flipping them back over to the bluefront
           nextTurn = true //continue playing
           // tries = true //to continue playing
-        }, 1000)
+        }, 500)
       }
     }
   })
@@ -125,7 +125,7 @@ function render() {
   renderMessage()
 }
 
-function renderMessage() {
+const renderMessage = () => {
   if (finishedCards === cards.length) {
     messageEl.innerText = 'YOU WIN!'
   }

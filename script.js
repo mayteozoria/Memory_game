@@ -15,7 +15,7 @@ let cards = [
   { value: '5', image: './images/turtle.png', matched: 'false' },
   { value: '6', image: './images/eagle.png', matched: 'false' }
 ]
-//influenced from the rock scissors paper ga video
+//influenced from the rock scissors paper GA video
 
 /*-----Variables-----*/
 
@@ -72,7 +72,7 @@ cardEls.forEach((element, index) => {
         //check for winner to see if all the cards are matched and flipped down then reset
         if (finishedCards === cards.length) {
           renderMessage()
-          resetGame() //check for a win or reset
+          //resetGame() //check for a win or reset
         }
       } else {
         //no match
@@ -91,7 +91,7 @@ cardEls.forEach((element, index) => {
   })
 })
 
-const resetGame = () => {
+function resetGame() {
   //reset the cards when two non matching cards are selected
   nextTurn = false
   setTimeout(() => {
@@ -102,7 +102,7 @@ const resetGame = () => {
     cardEls.forEach((element, index) => {
       //flip the cards face down once the games has reset
       element.setAttribute('src', './images/bluefront.png')
-      messageEl.innerText = '' //remove the innter of YOU WIN
+      //messageEl.innerText = '' //remove the innter of YOU WIN
     })
 
     cards.forEach((card, index) => {
@@ -111,7 +111,7 @@ const resetGame = () => {
     })
     shuffleCards(cards)
     //shuffle cards and start again
-  }, 1500)
+  }, 500)
 }
 
 function render() {
@@ -119,7 +119,7 @@ function render() {
   renderMessage()
 }
 
-const renderMessage = () => {
+function renderMessage() {
   if (finishedCards === cards.length) {
     messageEl.innerText = 'YOU WIN!'
   }

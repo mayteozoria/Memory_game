@@ -41,7 +41,7 @@ h1 {
 
 h2{
   text-align: center;
-  color: red;
+  color: white;
   font-size: 40px;
 
 }
@@ -135,6 +135,6 @@ footer{
   
 }
 @media only screen 
-    and (device-width: 428px) 
-    and (device-height: 926px)
-    and (-webkit-device-pixel-ratio: 3) {} 
+  and (device-width: 428px) 
+  and (device-height: 926px)
+  and (-webkit-device-pixel-ratio: 3) {} 
