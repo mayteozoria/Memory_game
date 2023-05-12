@@ -42,8 +42,10 @@
 
 ### **_Credits_**
 ##### Game Rules: (https://raisingchildren.net.au/guides/activity-guides/thinking-and-brain-games/memory-game#:~:text=Memory%20games%20for%20kids%3A%20why%20they're%20good,-Memory%20games%20for&text=They%3A,things%20without%20fear%20of%20failure.)
-##### https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
-#### Building a browser game:(https://hub.generalassemb.ly/learn/course/front-end-fundamentals-us-online-ec-24-april-2023-19-july-2023/build-another-game-rock-paper-scissors/build-another-game-rock-paper-scissors?client=courses&page=1https://hub.generalassemb.ly/learn/course/front-end-fundamentals-us-online-ec-24-april-2023-19-july-2023/build-another-game-rock-paper-scissors/build-another-game-rock-paper-scissors?client=courses&page=1)
+##### (https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+#### Building a browser game:(https://hub.generalassemb.ly/learn/course/front-end-fundamentals-us-online-ec-24-april-2023-19-july-2023/build-another-game-rock-paper-scissors/build-another-game-rock-paper-scissors?client=courses&page=1https://hub.generalassemb.ly/learn/course/front-end-fundamentals-us-online-ec-24-april-2023-19-july-2023/)build-another-game-rock-paper-scissors/build-another-game-rock-paper-scissors?client=courses&page=1)
+#### (https://stackoverflow.com/questions/39452193/loop-through-array-and-add-event-listener-click-to-each)
+#### 
 
 ### **_Wireframe_**
 ![WIREFRAME]:(https://www.figma.com/file/waGUZxmjzyXiIPGbeaNvMJ/Untitled?node-id=0%3A1&t=FfZJWSrE51q3pSv9-1)
